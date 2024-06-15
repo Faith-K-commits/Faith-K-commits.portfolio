@@ -29,6 +29,7 @@ To view the "In Progress" page locally, follow these steps:
 - `index.html` - The main HTML file for the "In Progress" page.
 - `styles.css` - The CSS file to style the page.
 - `script.js` - The javascript file to make the site dynamic.
+- `assets` - The folder containing images and icons used in the project.
 
 ## Future Plans
 
