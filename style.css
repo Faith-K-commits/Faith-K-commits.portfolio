@@ -166,20 +166,24 @@ span {
   padding: 20px 50px;
   background-color: white;
   width: 80%;
-  position: relative;
 }
 
-.socials img {
+.section {
+  padding-right: 70px;
+}
+
+.section:not(:last-child) {
+  border-right: 2px solid #ccc;
+}
+
+.socials,
+.contact-me img {
   cursor: pointer;
 }
 
 .bottom p {
   color: grey;
   text-align: center;
-}
-
-.bottom .contact-me img {
-  cursor: pointer;
 }
 
 .next {
