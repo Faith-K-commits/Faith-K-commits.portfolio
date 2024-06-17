@@ -297,8 +297,6 @@ span {
   width: 60%;
 }
 
-/* FIXME: Center service div to improve UI */
-
 .service {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -306,6 +304,7 @@ span {
   width: 80%;
   height: 60%;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .individual-service {
