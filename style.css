@@ -139,7 +139,7 @@ span {
   background: linear-gradient(to bottom right, transparent 50%, #ff4842 50%);
 }
 
-/* TODO: Customize floating buttons */
+/* FIXME: Customize floating buttons */
 
 .development {
   bottom: 70px;
