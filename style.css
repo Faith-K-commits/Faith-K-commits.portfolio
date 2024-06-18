@@ -276,9 +276,6 @@ span {
 
 .services {
   margin-top: 90px;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
 }
 
 .services-header {
@@ -330,4 +327,37 @@ span {
 
 .individual-service h3 {
   font-weight: 600;
+}
+
+/* TODO: Add a sleek hover effect */
+.individual-service:hover {
+  background-color: #ff4842;
+  color: white;
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 90px;
+}
+
+.projects .right {
+  font-size: 45px;
+  cursor: pointer;
+  color: #ff4842;
+}
+
+.contact-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 90px;
+}
+
+.contact-page form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
