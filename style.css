@@ -364,7 +364,7 @@ span {
 }
 
 footer {
-  margin-top: 70px;
+  margin: 70px auto;
 }
 
 .footer-nav ul {
@@ -399,5 +399,10 @@ footer .section:not(:last-child) {
 
 .section:not(:last-child) {
   border-right: 2px solid #ccc;
-  height: auto;
+}
+
+.rights {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
