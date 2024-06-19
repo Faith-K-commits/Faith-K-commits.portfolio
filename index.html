@@ -122,10 +122,6 @@
     <div class="about" id="about">
       <div class="about-left">
         <img src="./assets/images/about-me.svg" alt="About me image" />
-        <div class="floating-label experience">
-          <span>1+</span> Years of Experience
-        </div>
-        <div class="floating-label work">Frontend Developer</div>
       </div>
       <div class="about-right">
         <h4><span>ABOUT</span> ME</h4>
@@ -227,27 +223,38 @@
     </div>
     <div class="contact-page" id="contact">
       <div class="left">
-        <h4><span>CONTACT</span> ME</h4>
+        <!-- <h4><span>CONTACT</span> ME</h4> -->
         <h1>LET'S TALK</h1>
+        <br />
+        <br />
+        <img src="./assets/images/contact.svg" alt="Contact me image" />
       </div>
-      <div class="middle">
-        <form action=".">
-          <label for="name">Name *</label>
-          <input type="text" />
-          <label for="email">Email*</label>
-          <input type="email" />
-          <label for="message">Message</label>
-          <textarea name="message" id="message"></textarea>
+      <div class="contact-form-container">
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name*</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="submit-button">Submit</button>
+          </div>
         </form>
       </div>
+
       <div class="right">
         <button>Get in touch</button>
         <br />
-        <!-- <p>
+        <p>
           I'm currently available to take on new projects, so feel free to send
           me a message about anything that you want me to work on. You can
           contact me anytime.
-        </p> -->
+        </p>
       </div>
     </div>
     <footer>
@@ -262,6 +269,8 @@
               />
               <h2>Faith</h2>
             </div>
+            <div class="separator"></div>
+            <!-- Separator after Faith -->
           </div>
           <div class="section footer-nav">
             <ul>
@@ -271,6 +280,8 @@
               <li><a href="#projects">Projects</a></li>
             </ul>
           </div>
+          <div class="separator"></div>
+          <!-- Separator before GitHub -->
           <div class="section contact-me">
             <a href="https://github.com/Faith-K-commits" target="_blank">
               <img
