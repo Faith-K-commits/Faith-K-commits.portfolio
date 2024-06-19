@@ -218,20 +218,39 @@ span {
   margin: 5px 5px;
 }
 
+.skills {
+  width: 400px;
+  margin-top: 10px;
+}
+
 .skill {
   display: flex;
   align-items: center;
-}
-
-.skill .check {
-  font-size: 25px;
-  margin: 5px 10px 5px 0;
-  color: grey;
+  margin-bottom: 20px;
 }
 
 .skill h4 {
+  margin-left: 10px;
+  flex: 1;
+}
+
+.progress-bar {
+  border-radius: 50px;
+  overflow: hidden;
+  width: 50%;
+  height: 8px;
+  border: 1px solid #ff4842;
+}
+
+.progress {
+  background-color: #ff4842;
+  height: 100%;
+  border-radius: 50px;
+}
+
+.check {
   color: grey;
-  font-weight: 400;
+  font-size: 24px;
 }
 
 .cv button {
