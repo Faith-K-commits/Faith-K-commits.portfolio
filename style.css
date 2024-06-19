@@ -168,9 +168,6 @@ span {
 
 .section:not(:last-child) {
   padding-right: 70px;
-}
-
-.section:not(:last-child) {
   border-right: 2px solid #ccc;
 }
 
@@ -431,14 +428,6 @@ footer .contact-me {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-footer .section:not(:last-child) {
-  padding-right: 30px;
-}
-
-.section:not(:last-child) {
-  border-right: 2px solid #ccc;
 }
 
 .contact-page .right {
