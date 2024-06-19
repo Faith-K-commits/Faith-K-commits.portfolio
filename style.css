@@ -323,16 +323,13 @@ span {
 }
 
 .projects {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: block;
   margin-top: 90px;
 }
 
-.projects .right {
-  font-size: 45px;
-  cursor: pointer;
-  color: #ff4842;
+.projects img {
+  display: flex;
+  margin: 0 auto;
 }
 
 .contact-page img {
