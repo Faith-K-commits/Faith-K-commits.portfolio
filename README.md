@@ -33,8 +33,6 @@ To view the "In Progress" page locally, follow these steps:
 
 ## Future Plans
 
-- Complete the development of the portfolio.
-- Add sections for projects, skills, and contact information.
 - Implement responsive design for better viewing on different devices.
 
 ## Contact
