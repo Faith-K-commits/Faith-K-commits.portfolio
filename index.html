@@ -253,9 +253,14 @@
             class="contact-form"
             name="contact"
             method="POST"
-            action="/thank-you.html"
+            action="https://api.web3forms.com/submit"
             data-netlify="true"
           >
+            <input
+              type="hidden"
+              name="access_key"
+              value="acbc6a3a-47b5-4cef-89e5-a998b6d81f8c"
+            />
             <div class="form-group">
               <label for="name">Name*</label>
               <input type="text" id="name" name="name" required />
@@ -269,6 +274,11 @@
             <div class="form-group">
               <button type="submit" class="submit-button">Submit</button>
             </div>
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://reliable-truffle-c210ac.netlify.app/thank-you.html"
+            />
           </form>
         </div>
         <div class="right">
