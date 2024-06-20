@@ -397,6 +397,11 @@ span {
   align-self: flex-end;
 }
 
+.form-group .submit-button:hover {
+  background-color: #ff4842;
+  color: white;
+}
+
 footer {
   margin: 70px auto;
 }
