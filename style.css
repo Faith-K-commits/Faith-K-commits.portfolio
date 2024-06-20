@@ -434,8 +434,9 @@ footer .contact-me {
 }
 
 .contact-page .right p {
-  font-size: 14px;
+  font-size: 16px;
   padding: 0 20px;
+  color: grey;
 }
 
 .contact-page .right button {
@@ -452,4 +453,32 @@ footer .contact-me {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.thank-you-container {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+}
+.thank-you-container img {
+  width: 300px;
+  height: auto;
+}
+.thank-you-container h1 {
+  font-size: 2em;
+  color: #333;
+}
+.thank-you-container p {
+  font-size: 16px;
+  color: grey;
+}
+.thank-you-container a {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1em;
+  color: #ff4842;
+  text-decoration: none;
+}
+.thank-you-container a:hover {
+  text-decoration: underline;
 }
