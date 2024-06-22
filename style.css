@@ -601,4 +601,50 @@ section {
     display: grid;
     grid-template-columns: 1fr;
   }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects img {
+    width: 300px;
+  }
+
+  .contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-page img {
+    display: none;
+  }
+
+  .contact-page .right {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .contact-page .right button {
+    display: none;
+  }
+
+  .contact-page br {
+    display: none;
+  }
+
+  .contact-page .right p {
+    padding: 0;
+  }
+
+  .contact-page .contact-form-container {
+    width: 100%;
+    order: 2;
+  }
 }
