@@ -120,6 +120,10 @@ span {
   gap: 30px;
 }
 
+.home-footer a {
+  text-decoration: none;
+}
+
 .bottom {
   display: flex;
   align-items: center;
@@ -587,5 +591,14 @@ section {
 
   .skill h4 {
     font-size: 16px;
+  }
+
+  .services .services-header p {
+    width: 100%;
+  }
+
+  .service {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
