@@ -131,14 +131,10 @@ span {
   width: 80%;
 }
 
-.section:not(:last-child) {
-  padding-right: 70px;
-  border-right: 2px solid #ccc;
-}
-
 .socials,
 .contact-me img {
   cursor: pointer;
+  background: none;
 }
 
 .bottom p {
@@ -507,6 +503,7 @@ section {
   }
 
   .home {
+    display: flex;
     flex-direction: column;
     gap: 20px;
   }
@@ -525,9 +522,10 @@ section {
     text-align: center;
   }
 
-  .home .left .home-connect {
-    margin-right: 0;
-    text-align: center;
+  .home-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .home .right {
@@ -538,5 +536,26 @@ section {
   .home .right img {
     margin: 0 auto;
     width: 60%;
+  }
+  .home-footer .bottom {
+    display: flex;
+    background: none;
+  }
+
+  .home-footer .tools-skills,
+  .home-footer .contact-me {
+    display: none;
+  }
+
+  .home-footer .socials {
+    flex: none;
+    min-width: 0;
+  }
+
+  .home-footer .socials img {
+    margin-top: 15px;
+  }
+  .next {
+    display: none;
   }
 }
