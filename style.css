@@ -76,7 +76,6 @@ nav li a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* margin-top: 20px; */
 }
 
 span {
@@ -112,43 +111,6 @@ span {
 .home .right img {
   width: 400px;
   margin-right: 50px;
-}
-
-.home .right .button {
-  position: absolute;
-  background-color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.responsive {
-  top: 10px;
-  left: 30px;
-  color: #ff4842;
-  position: relative;
-  overflow: hidden;
-}
-
-.responsive::after {
-  content: ""; /* This is necessary for the pseudo element to work. */
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 20px;
-  height: 100%;
-  background: linear-gradient(to bottom right, transparent 50%, #ff4842 50%);
-}
-
-.development {
-  bottom: 70px;
-  right: 10px;
-}
-
-.right .button.development {
-  background-color: #fafafa;
 }
 
 .home-footer {
@@ -531,9 +493,11 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: max-height 0.3s ease-out;
     overflow: hidden;
-    gap: 20px;
-    font-size: 16px;
-    height: auto;
+  }
+
+  .navbar .nav-links.active li a {
+    font-size: 20px;
+    margin-bottom: 20px;
   }
 
   .navbar .menu-button {
@@ -551,8 +515,24 @@ section {
     order: 2; /* display left after right */
   }
 
+  .home .left h3,
+  h2 {
+    text-align: center;
+  }
+
+  .home .left p {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .home .left .home-connect {
+    margin-right: 0;
+    text-align: center;
+  }
+
   .home .right {
     order: 1;
+    text-align: center;
   }
 
   .home .right img {
