@@ -466,6 +466,12 @@ section {
   display: none;
 }
 
+.nav-links .nav-link.active {
+  background-color: #ff4842;
+  border-radius: 50px;
+  color: white;
+}
+
 /* FIXME: Make the navbar more appealing */
 @media (max-width: 480px) {
   body {
@@ -480,6 +486,8 @@ section {
   .navbar .nav-links,
   .nav-contact {
     display: none;
+    flex-direction: column;
+    align-items: center;
   }
 
   .navbar .nav-links.active {
@@ -490,11 +498,7 @@ section {
     background-color: #ff4842;
     width: 50%;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: max-height 0.3s ease-out;
-    overflow: hidden;
   }
-
   .navbar .nav-links.active li a {
     font-size: 20px;
     margin-bottom: 20px;

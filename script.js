@@ -11,4 +11,23 @@ menuButton.addEventListener('click', function() {
     }
 });
 
-// TODO: Make an active button for the current page
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.forEach(nav => nav.classList.remove('active'));
+            link.classList.add('active');
+        });
+    });
+
+    // Highlight the current section link based on URL hash on page load
+    const currentHash = window.location.hash;
+    if (currentHash) {
+        const activeLink = document.querySelector(`.nav-link[href="${currentHash}"]`);
+        if (activeLink) {
+            navLinks.forEach(nav => nav.classList.remove('active'));
+            activeLink.classList.add('active');
+        }
+    }
+});
