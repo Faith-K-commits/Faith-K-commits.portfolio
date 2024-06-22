@@ -558,4 +558,34 @@ section {
   .next {
     display: none;
   }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 auto; */
+  }
+
+  .about-right {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about .about-left img {
+    display: none;
+  }
+  .skills {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .skill {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .skill h4 {
+    font-size: 16px;
+  }
 }
