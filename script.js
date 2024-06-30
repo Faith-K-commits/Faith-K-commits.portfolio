@@ -1,33 +1,21 @@
 const menuIcon = document.querySelector('.menu-icon');
 const menuButton = document.querySelector('.menu-button');
 const navLinks = document.querySelector('.nav-links');
+const navLinkElements = document.querySelectorAll('.nav-link')
 
-menuButton.addEventListener('click', function() {
+menuButton.addEventListener('click', () => {
     navLinks.classList.toggle('active');
-    if (menuIcon.name === 'menu'){
+    if (menuIcon.name === 'menu') {
         menuIcon.name = 'close';
-    } else{
+    } else {
         menuIcon.name = 'menu';
     }
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const navLinks = document.querySelectorAll('.nav-link');
+navLinkElements.forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        menuIcon.name = 'menu';
+    })
+})
 
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.forEach(nav => nav.classList.remove('active'));
-            link.classList.add('active');
-        });
-    });
-
-    // Highlight the current section link based on URL hash on page load
-    const currentHash = window.location.hash;
-    if (currentHash) {
-        const activeLink = document.querySelector(`.nav-link[href="${currentHash}"]`);
-        if (activeLink) {
-            navLinks.forEach(nav => nav.classList.remove('active'));
-            activeLink.classList.add('active');
-        }
-    }
-});
