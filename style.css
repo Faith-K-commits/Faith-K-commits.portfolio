@@ -324,13 +324,13 @@ span {
 }
 
 .description p {
-  font-size: 16px;
+  font-size: 14px;
   color: grey;
-  display: inline;
+  display: block;
 }
 
 .description p a {
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
 }
 

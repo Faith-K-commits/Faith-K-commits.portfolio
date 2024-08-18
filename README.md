@@ -3,6 +3,7 @@
 This repository contains the source code for my personal portfolio, showcasing my projects, skills, and experiences as a software developer.
 
 ## Technologies Used
+
 - HTML
 - CSS
 - JavaScript
@@ -12,17 +13,17 @@ This repository contains the source code for my personal portfolio, showcasing m
 To view the portfolio locally, follow these steps:
 
 1. Clone the repository:
-    ```bash
-    git clone https://github.com/Faith-K-commits/Faith-K-commits.portfolio
-    ```
+   ```bash
+   git clone https://github.com/Faith-K-commits/Faith-K-commits.portfolio
+   ```
 2. Navigate to the project directory:
-    ```bash
-    cd Faith-K-commits.portfolio
-    ```
+   ```bash
+   cd Faith-K-commits.portfolio
+   ```
 3. Open `index.html` in your web browser to view the page:
-    ```bash
-    open index.html
-    ```
+   ```bash
+   open index.html
+   ```
 
 ## Project Structure
 
@@ -41,7 +42,6 @@ To view the portfolio locally, follow these steps:
 
 - Add more projects with detailed descriptions.
 - Implement additional animations and transitions.
-- Integrate a blog section to share my thoughts and experiences in software development.
 
 ## Live Demo
 
