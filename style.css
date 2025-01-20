@@ -181,38 +181,29 @@ span {
 }
 
 .skills {
-  width: 400px;
-  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
 }
 
 .skill {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skill ion-icon {
+  font-size: 2rem;
+  color: #333;
 }
 
 .skill h4 {
-  margin-left: 10px;
-  flex: 1;
+  font-size: 1rem;
+  margin-top: 10px;
 }
 
-.progress-bar {
-  border-radius: 50px;
-  overflow: hidden;
-  width: 50%;
-  height: 8px;
-  border: 1px solid #ff4842;
-}
-
-.progress {
-  background-color: #ff4842;
-  height: 100%;
-  border-radius: 50px;
-}
-
-.check {
-  color: grey;
-  font-size: 24px;
+.skill img {
+  width: 100%;
 }
 
 .cv button {
@@ -290,48 +281,84 @@ span {
 .projects {
   display: block;
   margin-top: 90px;
+  text-align: center;
+  padding: 20px;
+}
+
+.projects h4 span {
+  color: #007bff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  margin: 20px 0;
+  font-weight: 600;
+  color: #333;
 }
 
 .project-container {
   display: flex;
   justify-content: center;
-  align-items: center; /* Optional: center vertically */
-  padding: 20px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .project {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  gap: 30px;
 }
 
 .project-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .project-item img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  border-radius: 10px;
+  object-fit: cover;
+  border-bottom: 3px solid #ff4842;
 }
 
 .description {
-  margin-top: 10px;
+  padding: 20px;
+  color: #555;
+}
+
+.description h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .description p {
   font-size: 14px;
-  color: grey;
-  display: block;
+  line-height: 1.6;
+  color: #777;
+  margin-bottom: 15px;
 }
 
 .description p a {
   font-size: 14px;
+  color: #ff4842;
   text-decoration: none;
+}
+
+.description p a:hover {
+  text-decoration: underline;
 }
 
 .contact-page img {
